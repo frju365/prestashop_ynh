@@ -115,9 +115,7 @@ POOL_FPM
 #=================================================
 
 final_path=/var/www/$app
-extract_source
-SUDO unzip $final_path/prestashop.zip $final_path/prestashop
-sudo mv $final_path/prestashop/* $final_path/
+sudo mv $final_path/prestashop/* $final_path
 sudo rm -rf $final_path/prestashop
 
 pushd $final_path/install/
